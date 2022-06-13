@@ -21,84 +21,71 @@ public class RecuMP03UF02 {
     public static String elTriangleEs(int costat1, int costat2, int costat3) {
         // el teu codi va aquí
         // return (tipusTriangles[??]);
-        return ("no està fet!");
+        return ("no està fet!"); // Aquesta línia cal que la modifiqueu amb la que vosaltres creieu oportú.
     }
 
     public static int llegirPositiuAmbMissatge(String missatgeAMostrar) {
         int valorLlegit = -1;
         // el teu codi va aquí
-        return (valorLlegit);
+        return (valorLlegit); // Aquesta línia cal que la modifiqueu amb la que vosaltres creieu oportú.
     }
 
     public static void mostrarCompresosEntre(int primerNombre, int segonNombre) {
         // el teu codi va aquí
     }
 
-    public static int[] tornaFilaColumnaMesGranMatriu(int[][] matriu) {
-        int[] filaColumna = new int[2];
-        // el teu codi va aquí
-        return (filaColumna);
-    }
-
     public static void main(String[] args) {
-        int notaAlumne = 0;
         String tipusTriangle = "";
 
         int[] costats = new int[3];
-        for (int i = 0; i < costats.length; i++) {
-            System.out.print("Entra el costat " + (i + 1) + ": ");
-            try {
-                costats[i] = teclat.nextInt();
-            } catch (Exception e) {
-                System.out.print("ERROR!\nCal que entris només enters!\n");
-                i--;
-            } finally {
-                teclat = new Scanner(System.in);
+            for (int i = 0; i < costats.length; i++) {
+                System.out.print("Entra el costat " + (i + 1) + ": ");
+                try {
+                    costats[i] = teclat.nextInt();
+                } catch (Exception e) {
+                    System.out.print("ERROR!\nCal que entris només enters!\n");
+                    i--;
+                } finally {
+                    teclat = new Scanner(System.in);
+                }
             }
-        }
 
-        // -- INICI Primer enunciat de la recuperació
-        tipusTriangle = elTriangleEs(costats[0], costats[1], costats[2]);
+            // -- INICI Primer enunciat de la recuperació
+            tipusTriangle = elTriangleEs(costats[0], costats[1], costats[2]);
 
-        System.out.print("El triangle amb els següents costats\n" +
-                "Si el costat #1 és de " + costats[0] + 
-                " el #2 és de " + costats[1] + 
-                " i el #3 és de " + costats[2] + "." +
-                " Llavors és un triangle de tipus " + tipusTriangle + ".\n\n" );
-        // -- FINAL Primer enunciat de la recuperació
+            System.out.print("Si el costat #1 és de " + costats[0] +
+                    " el #2 és de " + costats[1] +
+                    " i el #3 és de " + costats[2] + "." +
+                    "\nLlavors és un triangle de tipus " + tipusTriangle + ".\n\n");
+            // -- FINAL Primer enunciat de la recuperació
 
         // -- INICI Segon enunciat de la recuperació
+
         String textPrimerPositiu = "Entra el primer enter positiu: ";
         String textSegonPositiu = "Entra el segon enter positiu: ";
 
         int primerPositiuLlegit = 0;
         int segonPositiuLlegit = 0;
-        /* // Descomentar en cas de que l'alumne hagi fet el segon enunciat
-        primerPositiuLlegit = llegirPositiuAmbMissatge(textPrimerPositiu);
-        segonPositiuLlegit = llegirPositiuAmbMissatge(textSegonPositiu);
-        // */
-        // /* Descomentar en cas de que l'alumne NO hagi fet el segon enunciat
-        System.out.println(textPrimerPositiu);
-        primerPositiuLlegit = teclat.nextInt();
-        System.out.println(textSegonPositiu);
-        segonPositiuLlegit = teclat.nextInt();
-        //  l'alumne NO ha fet el segon enunciat */
-        System.out.println("Has entrat com a primer positiu " + primerPositiuLlegit);
-        System.out.println("Has entrat com a segon  positiu " + segonPositiuLlegit);
-        
-        // -- FINAL Segon enunciat de la recuperació
-        
-      
-        // -- INICI Tercer enunciat de la recuperació
-        System.out.print("Els nombres compresos entre " +
-        primerPositiuLlegit + " i " +
-        segonPositiuLlegit + " són:\n");
-        mostrarCompresosEntre(primerPositiuLlegit, segonPositiuLlegit);
-        // -- FINAL Tercer enunciat de la recuperació
-        
-        System.out.println("La nota de l'alumne és un " + notaAlumne);
-    }
+            primerPositiuLlegit = llegirPositiuAmbMissatge(textPrimerPositiu);
+            segonPositiuLlegit = llegirPositiuAmbMissatge(textSegonPositiu);
 
+                System.out.println("Has entrat com a primer positiu " + primerPositiuLlegit);
+                System.out.println("Has entrat com a segon  positiu " + segonPositiuLlegit);
+            // -- FINAL Segon enunciat de la recuperació
+
+            // -- INICI Tercer enunciat de la recuperació
+            //  Comentar la lína 77
+            //  en cas de que l'alumne hagi fet el segon enunciat
+                System.out.print("Els nombres compresos entre " +
+                        primerPositiuLlegit + " i " +
+                        segonPositiuLlegit + " són:\n");
+                mostrarCompresosEntre(primerPositiuLlegit, segonPositiuLlegit);
+
+            // -- FINAL Tercer enunciat de la recuperació
+
+
+    }
 }
+
 ```
 
