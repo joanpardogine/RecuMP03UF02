@@ -4,10 +4,6 @@
 
 Cal que creeu un repositori remot privat al vostre github, el nom del qual ha de ser **```<CognomNom>RecuMP03UF02```**, i que convideu a l'usuari **```joanpardogine```**. Cal que feu un **``**``commit``**``**, cada **15 minuts**, amb el missatge **```Control HH:MM```**. On **```HH:MM```** és l'hora en què s'ha de fer el **``commit``**. En el repositori [**```RecuMP03UF02```**](https://github.com/joanpardogine/RecuMP03UF02) de l'usuari **```joanpardogine```** trobareu el programa que faré servir per corregir aquesta activitat.
 
-[**```Enunciats 1, 2 i 3```**](README.md#enunciat-1-2-i-3)<BR>
-
-
-## Enunciats 1, 2 i 3
 Aquest és el contingut del fitxer [**```RecuMP03UF02.java```**](./RecuMP03UF02.java).
 
 ```java
